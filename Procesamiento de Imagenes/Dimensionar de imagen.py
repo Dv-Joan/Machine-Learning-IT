@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-imagen = cv2.imread('Filtrado de Imagen/bananos.jpg')
+imagen = cv2.imread('Procesamiento de Imagenes/bananos.jpg')
 alturaImagen = imagen.shape[0]  # Filas
 anchoImagen = imagen.shape[1]  # Columnas
 

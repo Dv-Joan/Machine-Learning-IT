@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-bananos = cv2.imread('Filtrado de Imagen/bananos.jpg')
+bananos = cv2.imread('Procesamiento de Imagenes/bananos.jpg')
 
 # Escala de grises
 gray = cv2.cvtColor(bananos, cv2.COLOR_BGRA2GRAY)

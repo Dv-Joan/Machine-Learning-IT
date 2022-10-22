@@ -6,7 +6,7 @@ from msilib.schema import CreateFolder
 import cv2
 import numpy as np
 
-bananos = cv2.imread('Filtrado de Imagen/bananos.jpg')
+bananos = cv2.imread('Procesamiento de Imagenes/bananos.jpg')
 
 # Crear imagen original
 cv2.imshow('original', bananos)
@@ -15,13 +15,13 @@ cv2.waitKey(5)
 # Crear filtro de 2x2 . Creacion de matriz de 2x2 de 1s
 filtro_2x2 = np.ones((2, 2))/(2*2)
 outputFiltro_2x2 = cv2.filter2D(bananos, -1, filtro_2x2)
-cv2.imshow('Filtrado de Imagen 2x2', outputFiltro_2x2)
+cv2.imshow('Procesamiento de Imagenes 2x2', outputFiltro_2x2)
 cv2.waitKey(5)
 
 # Crear filtro 5x5. Creacion de matriz de 5x5 de 1s
 filtro_5x5 = np.ones((5, 5))/((5*5))
 outputFiltro_5x5 = cv2.filter2D(bananos, -1, filtro_5x5)
-cv2.imshow('Filtrado de Imagen 5x5', outputFiltro_5x5)
+cv2.imshow('Procesamiento de Imagenes 5x5', outputFiltro_5x5)
 cv2.waitKey(5)
 
 
